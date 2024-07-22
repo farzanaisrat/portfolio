@@ -12,8 +12,8 @@ function App() {
         <EveModel></EveModel>
         <About></About>
         <Skills></Skills>
-        <Projects></Projects>
         <Experience></Experience>
+        <Projects></Projects>
     </div>
   );
 }

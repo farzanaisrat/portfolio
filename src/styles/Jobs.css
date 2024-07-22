@@ -1,4 +1,4 @@
-li { 
+.job-description li { 
     list-style-type:square;
     text-align: left; 
     color: #007ea7;

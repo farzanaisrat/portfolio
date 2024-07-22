@@ -55,23 +55,26 @@ class Projects extends React.Component {
                   <div className="card-title">{key}</div>
                   <div className="card-desc">{projects[key]["desc"]}</div>
                   <div className="card-tech">{projects[key]["techStack"]}</div>
+                <div className="project-external-links">
+                <a className="project-github" href={projects[key]["gitHub"]}>
+                    <GitHubIcon
+                      style={{
+                        fontSize: 45,
+                        color: "var(--lightest-slate)"
+                      }}
+                      ></GitHubIcon>
+                </a>  
                 <a className="project-links" href={projects[key]["link"]} target="_blank">
                   <LinkIcon
                     style={{
-                      fontSize: 25,
+                      fontSize: 45,
                       color: "var(--lightest-slate)"
                     }}
                   ></LinkIcon>
                 </a>
 
-                <a className="project-github" href={projects[key]["gitHub"]}>
-                    <GitHubIcon
-                      style={{
-                        fontSize: 25,
-                        color: "var(--lightest-slate)"
-                      }}
-                      ></GitHubIcon>
-                </a>
+                
+                </div>  
                 </li>
 
               </FadeInSection>
