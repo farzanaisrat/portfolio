@@ -19,7 +19,7 @@ class Skills extends React.Component {
 
     return (
         
-        <div className="skills" >
+        <div id="skills" >
             <FadeInSection>
                 <div className="skills-header">
                     <Divider><div className="skills-title">Skills</div></Divider>

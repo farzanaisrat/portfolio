@@ -1,6 +1,6 @@
 #projects {
-    margin: auto;
-    max-width: 1000px;
+    margin-top: 50px;
+    max-width: 1100px;
     min-height: 50vh;
   }
   
@@ -83,6 +83,7 @@ li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
     color: white;
     font-size: 16px;
+    margin-bottom: 20px;
   }
   
   

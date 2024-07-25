@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import Box from '@mui/material/Box';
 import "../../styles/Jobs.css"
 import FadeInSection from "../FadeInSection";
+import { duration } from "@mui/material";
 
 const isHorizontal = window.innerWidth < 600;
 
@@ -94,7 +95,17 @@ const Jobs = () => {
         "Performed code testing using Vitest to ensure code quality and reliability"
       ]
     },
-    "Wayne State University": {
+    "Wayne State University, Computer Science": {
+      jobTitle: "Undergraduate Research Assistant",
+      duration: "JUNE 2023 - AUG 2023",
+      desc: [
+        "Collaborated on a research project focused on identifying misogynistic and anti-LGBTQ+ content in GitHub comments",
+        "Categorized 1500 GitHub comments to assess the presence of discriminatory language, ensuring data accuracy and consistency",
+        "Worked alongside another research assistant to verify categorization and maintain alignment with research standards",
+        "Research under review by ACM Transactions on Software Engineering and Methodology"
+      ]
+    },
+    "Wayne State University, English": {
       jobTitle: "Undergraduate Teaching Assistant/Student Assistant",
       duration: "JUNE 2022 - FEB 2023",
       desc: [

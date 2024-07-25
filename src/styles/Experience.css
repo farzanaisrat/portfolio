@@ -1,3 +1,9 @@
+#experience {
+    margin-top: 50px;
+    max-width: 1100px;
+    min-height: 50vh;
+}
+
 .experience-header .experience-title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;

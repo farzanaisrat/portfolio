@@ -6,10 +6,17 @@
     font-size: 18px;
 }
 
-.joblist-job-title, .joblist-duration {
+.joblist-job-title {
     color: #000000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+    font-weight: 500px;
+}
+
+.joblist-duration {
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
     font-weight: 500px;
 }
 

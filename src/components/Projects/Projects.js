@@ -57,10 +57,10 @@ class Projects extends React.Component {
                   <div className="card-header">
                   </div>
                   <div className="card-title">{key}</div>
-                  <div className="card-desc">{projects[key]["desc"]}</div>
                   <div className="card-tech">{projects[key]["techStack"]}</div>
+                  <div className="card-desc">{projects[key]["desc"]}</div>
                 <div className="project-external-links">
-                <a className="project-github" href={projects[key]["gitHub"]}>
+                <a className="project-github" href={projects[key]["gitHub"]} target="_blank">
                     <GitHubIcon
                       style={{
                         fontSize: 40,
