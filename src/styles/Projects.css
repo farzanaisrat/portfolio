@@ -14,14 +14,14 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
     color: #0d47a1;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+    padding-top: 20px;
 }
 
 li { 
-  list-style-type:square;
   text-align: center; 
   color: #007ea7;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

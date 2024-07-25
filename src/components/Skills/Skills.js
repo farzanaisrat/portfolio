@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Marquee from "react-fast-marquee";
+import Divider from "@mui/material/Divider";
 import "../../styles/Skills.css"
 import FadeInSection from "../FadeInSection";
 import { skillsData } from './skillsData'
@@ -19,11 +20,12 @@ class Skills extends React.Component {
     return (
         
         <div className="skills" >
-            <div className="skillsHeader">
             <FadeInSection>
-                <div className="skills-title">Skills</div>
+                <div className="skills-header">
+                    <Divider><div className="skills-title">Skills</div></Divider>
+                </div>
             </FadeInSection>
-            </div>
+
             <div className="skillsContainer">
                 <div className="skill--scroll">
                     <FadeInSection>

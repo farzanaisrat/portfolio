@@ -5,15 +5,17 @@ import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import EveModel from './components/ThreeJSAnimations/evemodel';
 import Experience from './components/Experience/experience';
+import Contact from './components/Contact/contact';
 
 function App() {
   return (
     <div className="App">
-        <EveModel></EveModel>
         <About></About>
         <Skills></Skills>
         <Experience></Experience>
         <Projects></Projects>
+        <Contact></Contact>
+        
     </div>
   );
 }

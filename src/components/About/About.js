@@ -12,7 +12,7 @@ class About extends React.Component {
     return (
       <div id="about">
         <FadeInSection>
-        <div className="about-title">Welcome, it's Farzana.</div>
+        <div className="about-header">Welcome, it's Farzana.</div>
         </FadeInSection>
         
         <FadeInSection delay={`500ms`}>

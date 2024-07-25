@@ -8,6 +8,7 @@ import TabPanel from '@mui/lab/TabPanel';
 import Jobs from "./jobs";
 import "../../styles/Experience.css"
 import FadeInSection from "../FadeInSection";
+import Divider from "@mui/material/Divider";
 import { Fade } from "@mui/material";
 
 
@@ -26,7 +27,7 @@ class Experience extends React.Component {
             <div className="experience">
                 <FadeInSection>
                     <div className="experience-header">
-                        <div className="experience-title">Experience</div>
+                        <Divider><div className="experience-title">Experience</div></Divider>
                     </div>
                     <Jobs></Jobs>
                 </FadeInSection>

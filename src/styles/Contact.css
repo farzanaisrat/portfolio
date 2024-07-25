@@ -1,0 +1,23 @@
+#contact {
+    margin: auto;
+    max-width: 1000px;
+    min-height: 40vh;
+}
+
+.contact-header .contact-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45px;
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.contact-links {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(18px, 35px));
+    grid-gap: 50px;
+}

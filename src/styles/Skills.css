@@ -1,3 +1,4 @@
+/*
 .skills {
     display: flex;
     flex-direction: column;
@@ -6,20 +7,22 @@
     min-height: 60vh;
     padding: 2.5rem 2rem 2rem 2rem;
 }
-
+/*
 .skillsHeader {
     display: flex;
     align-items: center;
     justify-content: center; 
 }
-
-.skillsHeader .skills-title {
+*/
+.skills-header .skills-title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 45px;
     text-align: center;
     color: #0d47a1;
+    margin-bottom: 30px;
+    padding-top: 20px;
 }
 
 .skillsContainer {

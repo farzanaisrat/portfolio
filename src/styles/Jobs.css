@@ -1,15 +1,16 @@
 .job-description li { 
     list-style-type:square;
     text-align: left; 
-    color: #007ea7;
+    color: #0d47a1;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
 }
 
 .joblist-job-title, .joblist-duration {
-    color: #0d47a1;
+    color: #000000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500px;
 }
 
 .joblist-tabs {
@@ -17,4 +18,8 @@
     display: flex;
     background-color: "theme.palette.background.paper";
     height: 300
+}
+
+.joblist-contents {
+    margin-top: -15px;
 }
