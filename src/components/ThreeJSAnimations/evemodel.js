@@ -4,46 +4,44 @@ import { OrbitControls, useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
 function Model(props) {
-  const { scene } = useGLTF('models/scene2.gltf');
+  const { scene, animations } = useGLTF('models/scene_5.gltf');
   const headRef = useRef();
+  const mixer = useRef();
 
-  // Set up the animation mixer
   useEffect(() => {
-    scene.animations = [];
     // Assuming the head bone is named 'Bone001' in Blender
     headRef.current = scene.getObjectByName('Bone001');
 
-    console.log('Initial Head Rotation:', headRef.current.rotation);
-
-    // Ensure the head starts facing forward
-    if (headRef.current) {
-      //headRef.current.rotation.set(0, 0 ,0); // Set rotation to face forward
-    }
+    // Set up the animation mixer
+    mixer.current = new THREE.AnimationMixer(scene);
+    const action = mixer.current.clipAction(
+      animations.find((clip) => clip.name === 'KeyAction.002')
+    );
+    action.play();
     
-  }, [scene]);
+    return () => {
+      // Clean up the mixer when the component unmounts
+      mixer.current.stopAllAction();
+      mixer.current.uncacheClip(action.getClip());
+      mixer.current.uncacheRoot(scene);
+    };
+  }, [scene, animations]);
 
-  const maxRotationX = Math.PI; // 45 degrees
-  const maxRotationY = Math.PI / 4;
-  //const maxRotationZ = Math.PI / 4;
 
-  // Update head bone rotation based on mouse movement
-  useFrame((state) => {
+  // Update head bone rotation based on mouse movement and advance the animation mixer
+  useFrame((state, delta) => {
     if (headRef.current) {
       const { mouse } = state;
       // Calculate the desired rotation
-      let rotationX = mouse.x * Math.PI ; // Adjust this value to control sensitivity
-      //let rotationY = mouse.y * Math.PI / 1;
-      //let rotationZ = mouse.z * Math.PI / 1;
-
-      // Clamp the rotation values
-      rotationX = THREE.MathUtils.clamp(rotationX, -maxRotationX, maxRotationX);
-      //rotationY = THREE.MathUtils.clamp(rotationY, -maxRotationY, maxRotationY);
-      //rotationZ = THREE.MathUtils.clamp(rotationZ, -maxRotationZ, maxRotationZ);
-
+      let rotationX = mouse.x * Math.PI; // Adjust this value to control sensitivity
+      
       // Apply the clamped rotation
       headRef.current.rotation.y = rotationX;
-      //headRef.current.rotation.x = rotationY;
+      
+    }
 
+    if (mixer.current) {
+      mixer.current.update(delta);
     }
   });
 
@@ -53,14 +51,13 @@ function Model(props) {
 function EveModel() {
   return (
     <Canvas
-    style={{ width: '100%', height: '100%' }}
-    camera={{ position: [0, 0.5, 4], fov: 50 }}
-
+      style={{ width: '100%', height: '100%' }}
+      camera={{ position: [0, 0.5, 4], fov: 50 }}
     >
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
-      <Model position={[-1.2, -4.5, 0]} scale={[1.35, 1.35, 0.65]} /> {/* Move down and scale up */}
-      <OrbitControls enableZoom={false} enableRotate={false}/>
+      <Model position={[-1.2, -4.5, 0.5]} scale={[1.35, 1.35, 0.65]} /> {/* Move down and scale up */}
+      <OrbitControls enableZoom={false} enableRotate={false} />
     </Canvas>
   );
 }

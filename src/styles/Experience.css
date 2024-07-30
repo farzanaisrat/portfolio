@@ -15,3 +15,16 @@
     padding-top: 20px;
 }
 
+
+@media only screen and (max-width: 600px) {
+    #experience {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    .experience-tabs {
+        height: unset !important;
+        flex-direction: column !important;
+    }
+
+}

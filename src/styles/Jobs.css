@@ -1,32 +1,43 @@
-.job-description li { 
-    list-style-type:square;
-    text-align: left; 
-    color: #0d47a1;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
+ul {
+    list-style: none;
+    margin-left: -40px;
 }
 
-.joblist-job-title {
+.experience-description li {
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 16px;
+    font-size: 18px;
+  }
+
+.experience-description li::before {
+    content: "🜨  ";
+    color:#000000;
+}
+
+.experience-roles {
     color: #000000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     font-weight: 500px;
 }
 
-.joblist-duration {
+.experience-time {
     color: #000000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 17px;
     font-weight: 500px;
 }
 
-.joblist-tabs {
+.experience-tabs {
     flex-grow: 1;
     display: flex;
     background-color: "theme.palette.background.paper";
     height: 300
 }
 
-.joblist-contents {
+.experience-contents {
     margin-top: -15px;
 }
+

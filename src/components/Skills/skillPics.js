@@ -11,7 +11,7 @@ import microsoftoffice from '../../assets/microsoftoffice.svg'
 
 
 
-export const skillsImage = (skill) => {
+export const skillPics = (skill) => {
     const skillID = skill.toLowerCase();
     switch (skillID) {
         case 'html':

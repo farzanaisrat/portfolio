@@ -11,8 +11,6 @@ import Divider from "@mui/material/Divider/Divider";
 class Contact extends React.Component {
     constructor() {
         super();
-        this.state = {
-        };
     }
 
     render() {
