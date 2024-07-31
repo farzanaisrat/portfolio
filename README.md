@@ -1,6 +1,6 @@
 # Farzana's Portfolio
 
-<img src="https://github.com/farzanaisrat/portfolio/blob/main/src/assets/website_screenshot">
+<img src="https://github.com/farzanaisrat/portfolio/blob/main/src/assets/website_screenshot.png">
 
 ## Installation
 
