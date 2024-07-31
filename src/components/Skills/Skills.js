@@ -28,6 +28,7 @@ class Skills extends React.Component {
                             gradient={false} 
                             speed={80} 
                             delay={0}
+                            pauseOnHover={true}
                             play={true} 
                             direction="left"
                         >

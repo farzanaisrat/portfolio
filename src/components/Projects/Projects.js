@@ -18,23 +18,23 @@ class Projects extends React.Component {
 
     const projects = {
       "Visualizer of Environemental Toxicants": {
-        desc:
+        tech: "ReactJS (ReactCharts, React-Simple-Maps)",
+        description:
           "Pulling public health data from CDC’s National Environmental Public Health Tracking Network API and illustrating the data in multiple visual representations (timelines, maps, tables)",
-        techStack: "ReactJS (ReactCharts, React-Simple-Maps)",
         link: "",
         gitHub: "https://github.com/lhei-git/Visualizer-of-Environmental-Toxicants"
       },
       "Helping Hand": {
-        desc:
-          "Mental health web application that allows for users to take time to checkout resources, fill out a goal tracker, take mental health quizzes, journal, and post on a discussion board",
         techStack: "JavaScript, HTML, CSS",
+        description:
+          "Mental health web application that allows for users to take time to checkout resources, fill out a goal tracker, take mental health quizzes, journal, and post on a discussion board",
         link: "https://waynehelpinghands.000webhostapp.com/",
         gitHub: "https://github.com/WSU-4110/Mental-Health-Helper"
       },
       "Ineffable": {
-        desc:
+        tech: "JavaScript (Three.js)",
+        description:
           "Recreation of the solar system in which Earth is the center of the system. It poses as a metaphor for humans' conceitedness.",
-        techStack: "JavaScript (Three.js)",
         link:
           "https://farzanaisrat.github.io/ineffable/",
         gitHub: "https://github.com/farzanaisrat/ineffable"
@@ -49,16 +49,14 @@ class Projects extends React.Component {
           </div>
         </FadeInSection>
 
-        <div className="project-container">
+        <div className="project-contents">
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (
-              <FadeInSection delay={`${i + 1}20ms`}>
-                <li className="projects-card">
-                  <div className="card-header">
-                  </div>
-                  <div className="card-title">{key}</div>
-                  <div className="card-tech">{projects[key]["techStack"]}</div>
-                  <div className="card-desc">{projects[key]["desc"]}</div>
+              <FadeInSection delay={`${i + 1}50ms`}>
+                <li className="projects-cards">
+                  <div className="cards-name">{key}</div>
+                  <div className="cards-tech">{projects[key]["tech"]}</div>
+                  <div className="cards-description">{projects[key]["description"]}</div>
                 <div className="project-external-links">
                 <a className="project-github" href={projects[key]["gitHub"]} target="_blank">
                     <GitHubIcon
@@ -78,7 +76,6 @@ class Projects extends React.Component {
                   ></LinkIcon>
                 </a>
               )}
-
                 
                 </div>  
                 </li>

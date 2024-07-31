@@ -24,8 +24,9 @@ class Contact extends React.Component {
                 </Divider>
                 </FadeInSection>
 
-                <FadeInSection>
+                
                     <div className="contact-links" >
+                    <FadeInSection>
                         <Tooltip title="LinkedIn" placement="left">
                         <a className="contact-linkedin" href="https://www.linkedin.com/in/farzana-israt/" target="_blank">
                             <LinkedInIcon
@@ -36,7 +37,9 @@ class Contact extends React.Component {
                             />
                         </a>
                         </Tooltip>
+                    </FadeInSection>
 
+                    <FadeInSection delay={`100ms`}>
                         <Tooltip title="Email" placement="left">
                         <a className="contact-email" href="mailto:farzanaisrat4@gmail.com">
                             <EmailIcon 
@@ -47,7 +50,9 @@ class Contact extends React.Component {
                             />
                         </a>
                         </Tooltip>
+                    </FadeInSection>
 
+                    <FadeInSection delay={`200ms`}>
                         <Tooltip title="GitHub" placement="left">
                         <a className="contact-github" href="https://github.com/farzanaisrat" target="_blank">
                             <GitHubIcon
@@ -58,9 +63,9 @@ class Contact extends React.Component {
                             />
                         </a>
                         </Tooltip>
-                        
+                    </FadeInSection>    
                     </div>
-                </FadeInSection>
+                
             </div>
         );
     }

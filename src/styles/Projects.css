@@ -6,7 +6,7 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: 350px 350px 350px;
     grid-gap: 10px;
   }
 
@@ -34,52 +34,45 @@ li {
   grid-template-columns: repeat(2, minmax(18px, 45px));
   grid-gap: 10px;
 }
+
   @media (max-width: 1080px) {
     .projects-grid {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
   }
   
-  .projects-card {
+  .projects-cards {
     position: relative;
-    cursor: default;
     display: flex;
     flex-direction: column;
     height: 80%;
     padding: 2rem 1rem;
     background-color: #007ea7;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
     border-radius: 16px;
   }
   
-  .projects-card:hover {
-    transform: translateY(-7px);
-  }
-  
-  .card-header {
-    margin-top: -20px;
-    display: flex;
-    padding: 1.25em 0 !important;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: none !important;
+  .projects-cards:hover {
+    transform: scale(1.04);
   }
   
   
-  .card-title {
+  .cards-name {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     font-size: 24px;
     font-weight: bold;
+    margin-top: 20px;
   }
   
-  .card-desc {
+  .cards-description {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
     color: white;
     font-size: 18px;
     padding-bottom: 30px;
   }
   
-  .card-tech {
+  .cards-tech {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
     color: white;
     font-size: 16px;

@@ -32,7 +32,7 @@
 
 .skill-box {
     background: #007ea7;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     width: 160px;
     height: 160px;
@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
-    transition: 300ms ease-in-out;
+    transition: 150ms ease-in-out;
 }
 
 .skill-box:hover  {
