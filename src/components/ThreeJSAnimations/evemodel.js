@@ -26,12 +26,16 @@ function Model(props) {
       mixer.current.uncacheRoot(scene);
     };
   }, [scene, animations]);
-
+  
+  const maxRotationX = Math.PI;
+  
   useFrame((state, delta) => {
     if (headRef.current) {
       const { mouse } = state;
 
-      const rotationX = (mouse.x - initialMouse.x / window.innerWidth) * Math.PI;
+      let rotationX = (mouse.x - initialMouse.x / window.innerWidth) * Math.PI;
+      
+      rotationX = THREE.MathUtils.clamp(rotationX, -maxRotationX, maxRotationX);
 
       headRef.current.rotation.y = rotationX;
     }
@@ -44,6 +48,15 @@ function Model(props) {
   return <primitive object={scene} {...props} />;
 }
 
+function EveBackground() {
+  return (
+    <mesh position={[0.2, -1, -1]} rotation={[0, 0, 0]}>
+      <circleGeometry args={[3, 64]} />
+      <meshBasicMaterial color="#0d47a1" />
+    </mesh>
+  );
+}
+
 function EveModel() {
   return (
     <Canvas
@@ -52,6 +65,7 @@ function EveModel() {
     >
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
+      <EveBackground />
       <Model position={[-1.2, -4.5, 0.5]} scale={[1.35, 1.35, 0.65]} />
       <OrbitControls enableZoom={false} enableRotate={false} />
     </Canvas>

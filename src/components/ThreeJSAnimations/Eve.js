@@ -1,5 +1,6 @@
 import React from "react";
 import EveModel from "./evemodel.js";
+import "../../styles/EveModel.css"
 
 class Eve extends React.Component {
     constructor() {
