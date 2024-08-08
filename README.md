@@ -4,7 +4,7 @@
 
 #### https://farzanaisrat.netlify.app/
 
-Using React, Material UI, and CSS
+Using React, react-three-fiber, Blender, Material UI, and CSS
 
 
 ## Installation
