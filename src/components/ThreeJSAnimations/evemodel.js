@@ -50,9 +50,9 @@ function Model(props) {
 
 function EveBackground() {
   return (
-    <mesh position={[0.2, -1, -1]} rotation={[0, 0, 0]}>
-      <circleGeometry args={[3, 64]} />
-      <meshBasicMaterial color="#0d47a1" />
+    <mesh position={[0.2, -1.2, -1]} rotation={[0, 0, 0]}>
+      <circleGeometry args={[3.3, 75]}/>
+      <meshBasicMaterial color="#0f214a" />
     </mesh>
   );
 }
@@ -66,7 +66,7 @@ function EveModel() {
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <EveBackground />
-      <Model position={[-1.2, -4.5, 0.5]} scale={[1.35, 1.35, 0.65]} />
+      <Model position={[-1.2, -4.5, 0.5]} scale={[1.4, 1.38, 0.65]} />
       <OrbitControls enableZoom={false} enableRotate={false} />
     </Canvas>
   );

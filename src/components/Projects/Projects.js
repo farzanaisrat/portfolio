@@ -17,7 +17,7 @@ class Projects extends React.Component {
   render() {
 
     const projects = {
-      "Visualizer of Environemental Toxicants": {
+      "Visualizer of Environmental Toxicants": {
         tech: "ReactJS (ReactCharts, React-Simple-Maps)",
         description:
           "Pulling public health data from CDC’s National Environmental Public Health Tracking Network API and illustrating the data in multiple visual representations (timelines, maps, tables)",

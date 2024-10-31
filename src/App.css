@@ -14,7 +14,8 @@
 }
 
 .App {
-  background-color: #bbdefb;
+  background-color: #001d5a;
+  background-image: url('./assets/portfolio-stars.png');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
+  
 }
 
 .App-link {

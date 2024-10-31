@@ -2,8 +2,8 @@
     display: flex;
     flex-direction:column;
     align-items: center;
-    padding-top: 30px;
     margin-top: 20px;
+    z-index: 0;
   }
   
   .about-header {
@@ -11,13 +11,13 @@
     text-align: center;
     font-weight: 500;
     font-size: 48px;
-    color: #0d47a1;
+    color: #ffffff;
     text-shadow: 2px 5px rgba(0, 0, 0, 0.10);
   }
   
   .about-description {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    color: #0d47a1;
+    color: #b3cbff;
     font-size: 22px;
     text-align: center;
     max-width: 800px;

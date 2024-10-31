@@ -2,6 +2,7 @@
 #skills {
     margin-top: 50px;
     min-height: 30vh;
+    z-index: 0;
 }
 
 .skills-header .skills-title {
@@ -10,7 +11,7 @@
     font-weight: 300;
     font-size: 45px;
     text-align: center;
-    color: #0d47a1;
+    color: #ffffff;
     margin-bottom: 30px;
     padding-top: 20px;
 }
@@ -31,7 +32,7 @@
 
 
 .skill-box {
-    background: #007ea7;
+    background: #81a9ff;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     width: 160px;
@@ -43,6 +44,8 @@
     justify-content: center;
     padding: 2rem 1rem;
     transition: 150ms ease-in-out;
+    color: black;
+    
 }
 
 .skill-box:hover  {

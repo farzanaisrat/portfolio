@@ -32,7 +32,7 @@ class Contact extends React.Component {
                             <LinkedInIcon
                                 style={{
                                     fontSize: 60,
-                                    color: "#007ea7"
+                                    color: "#b3cbff"
                                 }}
                             />
                         </a>
@@ -45,7 +45,7 @@ class Contact extends React.Component {
                             <EmailIcon 
                                 style={{
                                     fontSize: 60,
-                                    color: "#007ea7"
+                                    color: "#b3cbff"
                                 }}
                             />
                         </a>
@@ -58,7 +58,7 @@ class Contact extends React.Component {
                             <GitHubIcon
                                 style={{
                                     fontSize: 60,
-                                    color: "#007ea7"
+                                    color: "#b3cbff"
                                 }}
                             />
                         </a>

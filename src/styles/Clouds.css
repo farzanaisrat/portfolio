@@ -1,0 +1,34 @@
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+}
+
+.cloud1, .cloud2, .cloud3, .cloud4 {
+    position: absolute;
+    transform: scale(0.5);
+    opacity: 60%;
+}
+
+.cloud1 {
+    top: -350px;
+    left: -700px;
+}
+
+.cloud2 {
+    top: 400px;
+    left: 600px;
+}
+
+.cloud3 {
+    top: 750px;
+    left: -500px;
+}
+
+.cloud4 {
+    top: 1500px;
+    left: 800px;
+}

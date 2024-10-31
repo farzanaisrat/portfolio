@@ -84,17 +84,20 @@ const Jobs = () => {
 
   return (
     <div className="experience-tabs">
+      <div className="experience-job">
       <Tabs
         orientation="vertical"
         variant="scrollable"
         value={value}
         onChange={handleChange}
+        sx={{ "&.Mui-selected": { color: "#81a9ff !important" } }}
       >    
         {Object.keys(jobExperiences).map((key, index) => (
-          <Tab label={key} {...a11yProps(index)}/>
+          <Tab label={key} {...a11yProps(index)} />
         ))}
       </Tabs>
 
+      </div>
     <div className="experience-contents">
       {Object.keys(jobExperiences).map((key, index) => (
         <TabPanel value={value} index={index}>

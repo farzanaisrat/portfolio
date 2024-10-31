@@ -15,7 +15,9 @@ class Eve extends React.Component {
 
         return (
             <div id="eve-model">
-                <EveModel></EveModel>
+                <div className="eve">
+                    <EveModel></EveModel>
+                </div>
             </div>
         );
     }
